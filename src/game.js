@@ -66,7 +66,7 @@ class GameTree extends BinaryTree {
         gameTree.insert(2, "You tried to stabilize the spaceship. It's a success! You're now floating in space. Do you explore the spaceship or try to land on a nearby planet?");
         gameTree.insert(4, "You braced for impact. The spaceship crashes on a deserted planet. Do you try to fix the spaceship or explore the planet?");
         gameTree.insert(6, "You tried to find the source of the music. You find a hidden compartment with a map. Do you follow the map or ignore it?");
-        gameTree.insert(8, "You just enjoyed the music. Suddenly, you see a spaceship approaching. Do you try to communicate with it or hide?")
+        gameTree.insert(8, "You just enjoyed the music. Suddenly, you see a spaceship approaching. Do you try to communicate with it or hide? testy")
     }
     insertNode(node, newNode) {
         if (newNode.value < node.value) { // changed newNode.key to newNode.value
