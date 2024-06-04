@@ -1,0 +1,108 @@
+body{
+    background-color: #001a2b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    flex-direction: column;
+    
+    
+}
+
+.outputContainer{
+    min-height: 25vh;
+    min-width:20vw;
+    border: 1px solid teal;
+    border-radius: 20px;
+   padding:20px;
+   background-color: #001a2b;
+
+}
+.output{
+    background-color: #001a2b;
+    border:none;
+    resize: none;
+    color:white;
+}
+
+.output::placeholder{
+    color:rgb(207, 207, 207);
+}
+
+.eventSpaceContainer{
+    min-height: 5vh;
+    min-width:20vw;
+    border: 1px solid teal;
+    border-radius: 20px;
+    margin:5vh;
+    padding:20px;
+    font-weight: lighter;
+   color:rgb(207, 207, 207);
+}
+
+
+
+.inputContainer{
+    min-height:25vh;
+    min-width:20vw;
+    background-color:#001a2b;
+    color:white;
+    border: 1px solid teal;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+    text-align:left;
+}
+
+.input{
+    background-color: #001a2b;
+    resize: none;
+    min-height:22vh;
+    min-width:18vw;
+    color:white;
+    padding-top: 5px;
+    padding-left: 5px;
+    text-align:left;
+    border:none;
+}
+
+.input:focus{
+    background-color: #001a2b;
+    border:none;
+    outline: none;
+
+}
+
+.input::placeholder{
+    color:rgb(207, 207, 207);
+}
+
+.navigationContainer{
+    display:grid;
+    background-color: #001a2b;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5px;
+}
+
+.navigationButton{
+    min-width:5vw;
+    min-height:5vh;
+    background-color: teal;
+    border:none;
+    border-radius: 5px;
+}
+
+.up{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.submitButton{
+    min-width:15vw;
+    min-height:3vh;
+    background-color: teal;
+    border:none;
+    border-radius: 5px;
+    transform: translateY(-35px)
+}

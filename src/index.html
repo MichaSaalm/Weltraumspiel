@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeltRaumSpiel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"  type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="outputContainer">
+        <textarea id="outputArea" disabled class="output" placeholder="Welcome!"></textarea>
+    </div>
+    <div class="eventSpaceContainer">
+        <span id="eventArea" class="eventSpace">Would you like to embark on a space adventure?</span>
+    </div>
+    <div class="inputContainer">
+        <textarea id="inputArea"  draggable="false" class="input" placeholder="What would you like to do?"></textarea>
+    </div>
+    <div class="buttonContainer">
+        <button id="submitButton" class="submitButton">Submit</button>
+        <div id="navigationContainer" class="navigationContainer">
+            <button class="navigationButton up" id="goUp">UP</button>
+            <button class="navigationButton left" id="goLeft">LEFT</button>
+            <button class="navigationButton down" id="goDown">DOWN</button>
+            <button class="navigationButton right" id="goRight">RIGHT</button>
+        </div>
+    </div>
+</body>
+</html>
