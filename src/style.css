@@ -24,6 +24,8 @@ body{
     border:none;
     resize: none;
     color:white;
+    min-height:22vh;
+    min-width:18vw;
 }
 
 .output::placeholder{
