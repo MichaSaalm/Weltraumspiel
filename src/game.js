@@ -1,7 +1,6 @@
 window.onload = function() {
-    let name = prompt("What is your name?");
-
-
+    let name = prompt("Please enter your name: ");
+    
 class TreeNode {
     constructor(value) {
         this.value = value;
@@ -197,9 +196,7 @@ class GameTree extends BinaryTree {
         if (!this.currentNode.left && !this.currentNode.right) {
             return "Game Over";
         }
-
-        
-
+      
         return this.currentNode.result;
     }
 }
@@ -215,6 +212,12 @@ function setupEventListeners() {
     console.log(goLeft);
     console.log("script running");
 
+    const eventArea = document.getElementById('eventArea');
+    const inputArea = document.getElementById('inputArea');
+    const outputArea = document.getElementById('outputArea');
+    const submitButton = document.getElementById('submitButton'); 
+    
+    
     goLeft.addEventListener('click', function() {
         console.log("left");
         eventArea.innerHTML = gameTree.move('leftChoices');
@@ -232,20 +235,18 @@ function setupEventListeners() {
         eventArea.innerHTML = gameTree.move('backChoices');
         outputArea.innerHTML = gameTree.move('backEvent');
     });
-    const eventArea = document.getElementById('eventArea');
-    const inputArea = document.getElementById('inputArea');
-    const outputArea = document.getElementById('outputArea');
-    const submitButton = document.getElementById('submitButton');  
 
 
     submitButton.addEventListener('click', function() {
-        let inputValue = inputArea.value;
-        inputArea.value = "";
-        console.log(inputValue);
-        console.log("loaded");
-        console.log("clicked");          
-            eventArea.innerHTML = inputValue;
-    });
+       
+            let inputValue = inputArea.value;
+            inputArea.value = "";
+            console.log(inputValue);
+            console.log("loaded");
+            console.log("clicked");          
+         
+            });
+    
     eventArea.innerHTML = gameTree.move();
 
 }
@@ -253,7 +254,4 @@ function setupEventListeners() {
 // Call the function to setup the event listeners
 setupEventListeners();
 gameTree.inOrder(gameTree.root);
-
-
-
 };

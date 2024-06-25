@@ -46,6 +46,7 @@ body{
 
 
 .inputContainer{
+    display:none;
     min-height:25vh;
     min-width:20vw;
     background-color:#001a2b;
@@ -106,6 +107,7 @@ body{
 }
 
 .submitButton{
+    display:none;
     min-width:15vw;
     min-height:3vh;
     background-color: teal;
